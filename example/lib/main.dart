@@ -45,11 +45,11 @@ class _MyAppState extends State<MyApp> {
     for (int i = 0; i < 30 * (24 / 12); i++) {
       _list.add(
         MoonWidget(
-          date: DateTime(2021, 10, 6, 5).add(Duration(hours: i * 12)),
+          date: DateTime.now().add(Duration(hours: i * 12)),
           resolution: 64,
           size: 48,
-          moonColor: Colors.amber,
-          earthshineColor: Colors.blueGrey.shade900,
+          moonColor: Color(0xffF6F1D5),
+          earthshineColor: Color(0xff4B4A43),
         ),
       );
     }
